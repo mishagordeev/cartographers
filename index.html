@@ -13,9 +13,6 @@
     </style>
     <script>
         function show(event) {
-            console.log("down")
-            console.log(event.target)
-
             if (event.target.width == 200) {
                 const image = document.createElement('img')
                 image.width = 300
@@ -24,16 +21,11 @@
                 image.id = 'hint'
                 document.body.appendChild(image)
             }
-
-
         }
 
         function hide() {
-            console.log('up')
-            const image1 = document.getElementById('hint')
-            image1.remove()
-            isClicked = false
-
+            const image = document.getElementById('hint')
+            image.remove()
         }   
     </script>
 </head>
