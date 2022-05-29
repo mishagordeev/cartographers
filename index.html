@@ -26,33 +26,68 @@
         function hide() {
             const image = document.getElementById('hint')
             image.remove()
-        }   
+        }  
+
+        function showTurn(turn) {
+            const turns = document.getElementById("turns")
+            turns.innerHTML = ""
+            const image = document.createElement('img')
+            image.width = 1100
+            image.src = `after_t${turn}.png`
+            image.style.cssText = "position: absolute; top: 680px; left: 0px;"
+            turns.appendChild(image)
+        }  
     </script>
 </head>
 <body  onmousedown='show(event)' onmouseup="hide()">
-    <img width="200" src="spring.png" style="position: absolute; top: 0px; left: 30px;">
+    <img width="200" src="summer.png" style="position: absolute; top: 0px; left: 30px;">
     <img width="200" src="a.png" style="position: absolute; top: 0px; left: 250px;">
     <img width="200" src="b.png" style="position: absolute; top: 0px; left: 470px;">
     <img width="200" src="c.png" style="position: absolute; top: 0px; left: 690px;">
     <img width="200" src="d.png" style="position: absolute; top: 0px; left: 910px;">
-    <img width="200" src="a1.png" style="position: absolute; top: 320px; left: 30px;">
-    <img width="200" src="a2.png" style="position: absolute; top: 370px; left: 30px;">
-    <img width="200" src="a3.png" style="position: absolute; top: 420px; left: 30px;">
-    <img width="200" src="a4.png" style="position: absolute; top: 470px; left: 30px;">
-    <img width="200" src="a5.png" style="position: absolute; top: 520px; left: 30px;">
-    <img width="200" src="a6.png" style="position: absolute; top: 570px; left: 30px;">
-    <img width="200" src="a7.png" style="position: absolute; top: 620px; left: 30px;">
-    <img width="200" src="a8.png" style="position: absolute; top: 670px; left: 30px;">
+    <img width="200" src="b1.png" style="position: absolute; top: 320px; left: 30px;">
     <img width="200" src="1.png" style="position: absolute; top: 320px; left: 250px;">
     <img width="200" src="2.png" style="position: absolute; top: 320px; left: 470px;">
     <img width="200" src="3.png" style="position: absolute; top: 320px; left: 690px;"> 
     <img width="200" src="4.png" style="position: absolute; top: 320px; left: 910px;">
-    <img width="1000" src="after_t6.png" style="position: absolute; top: 1000px; left: 30px;">
-    <img width="1000" src="after_t5.png" style="position: absolute; top: 1800px; left: 30px;">
-    <img width="1000" src="after_t4.png" style="position: absolute; top: 2600px; left: 30px;">
-    <img width="1000" src="after_t3.png" style="position: absolute; top: 3200px; left: 30px;">
-    <img width="1000" src="after_t2.png" style="position: absolute; top: 4000px; left: 30px;">
-    <img width="1000" src="after_t1.png" style="position: absolute; top: 4800px; left: 30px;">
-    
+    <p style="position: absolute; top: 610px; left: 30px;">Ходы</p>
+    <button onclick="showTurn(1)" style="position: absolute; top: 650px; left: 30px;">1</button>
+    <button onclick="showTurn(2)" style="position: absolute; top: 650px; left: 50px;">2</button>
+    <button onclick="showTurn(3)" style="position: absolute; top: 650px; left: 70px;">3</button>
+    <button onclick="showTurn(4)" style="position: absolute; top: 650px; left: 90px;">4</button>
+    <button onclick="showTurn(5)" style="position: absolute; top: 650px; left: 110px;">5</button>
+    <button onclick="showTurn(6)" style="position: absolute; top: 650px; left: 130px;">6</button>
+    <button onclick="showTurn(7)" style="position: absolute; top: 650px; left: 150px;">7</button>
+    <div id="turns">
+        <img width="1100" src="after_t1.png" style="position: absolute; top: 680px; left: 0px;">
+    </div> 
+    <div style="position: absolute; top: 10px; left: 1150px;">
+        <div style="float: left;">
+            <p>Shu</p>
+            <p>Миша Гордеев</p>
+            <p>Виталий Соколов</p>
+            <p>Binom</p>
+            <p>Павел Соколов</p>
+            <p>Андрей Сеитов</p>
+            <p>shurik</p>
+            <p>Victorious</p>
+            <p>AjaxDesperados</p>
+            <p>Анастасия Москвина</p>
+            <p>Botanega</p>
+        </div>
+        <div style="float: left; padding-left: 15px;">
+            <p>14</p>
+            <p>14</p>
+            <p>13</p>
+            <p>11</p>
+            <p>9</p>
+            <p>8</p>
+            <p>7</p>
+            <p>7</p>
+            <p>6</p>
+            <p>3</p>
+            <p>0</p>            
+        </div>
+    </div>   
 </body>
 </html>
