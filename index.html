@@ -19,6 +19,7 @@
                 image.src = event.target.src
                 image.style.cssText = `position: fixed; top: ${event.clientY-200 < 0 ? 0 : event.clientY-200}px; left: ${event.clientX-150 < 0 ? 0 : event.clientX-150}px`
                 image.id = 'hint'
+                image.addEventListener("mouseup", function(){hide()});
                 document.body.appendChild(image)
             }
         }
@@ -51,7 +52,7 @@
         }
     </script>
 </head>
-<body  onmousedown='show(event)' onmouseup="hide()">
+<body  onmousedown='show(event)'>
     <img width="200" src="summer.png" style="position: absolute; top: 0px; left: 30px;">
     <img width="200" src="a.png" style="position: absolute; top: 0px; left: 250px;">
     <img width="200" src="b.png" style="position: absolute; top: 0px; left: 470px;">
