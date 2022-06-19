@@ -35,7 +35,7 @@
             const image = document.createElement('img')
             image.width = 1100
             image.src = `after_t${turn}.png`
-            image.style.cssText = "position: absolute; top: 800px; left: 0px;"
+            image.style.cssText = "position: absolute; top: 850px; left: 0px;"
             turns.appendChild(image)
         }
         
@@ -44,7 +44,7 @@
             for (let turn = turns; turn >= 1; turn--) {
                 const button = document.createElement('button')
                 button.innerHTML = turn
-                button.style.cssText = `position: absolute; top: 750px; left: ${leftoffcet + 30}px`
+                button.style.cssText = `position: absolute; top: 800px; left: ${leftoffcet + 30}px`
                 button.addEventListener("click", function(){showTurn(turn)});
                 document.body.appendChild(button)
                 leftoffcet += 20
@@ -61,8 +61,8 @@
     <img width="200" src="c1.png" style="position: absolute; top: 320px; left: 30px;">
     <img width="200" src="с2.png" style="position: absolute; top: 370px; left: 30px;">
     <img width="200" src="c3.png" style="position: absolute; top: 420px; left: 30px;">
-    <!-- <img width="200" src="b4.png" style="position: absolute; top: 470px; left: 30px;">
-    <img width="200" src="b5.png" style="position: absolute; top: 520px; left: 30px;">
+    <img width="200" src="c4.png" style="position: absolute; top: 470px; left: 30px;">
+    <!-- <img width="200" src="b5.png" style="position: absolute; top: 520px; left: 30px;">
     <img width="200" src="b6.png" style="position: absolute; top: 570px; left: 30px;">
     <img width="200" src="b7.png" style="position: absolute; top: 620px; left: 30px;">
     <img width="200" src="b8.png" style="position: absolute; top: 670px; left: 30px;">
@@ -72,12 +72,12 @@
     <img width="200" src="2.png" style="position: absolute; top: 320px; left: 470px;">
     <img width="200" src="3.png" style="position: absolute; top: 320px; left: 690px;"> 
     <img width="200" src="4.png" style="position: absolute; top: 320px; left: 910px;">
-    <p style="position: absolute; top: 700px; left: 30px;">Ходы</p>
+    <p style="position: absolute; top: 750px; left: 30px;">Ходы</p>
     <script>
-        drawButtons(17)
+        drawButtons(18)
     </script>
     <div id="turns">
-        <img width="1100" src="after_t17.png" style="position: absolute; top: 800px; left: 0px;">
+        <img width="1100" src="after_t18.png" style="position: absolute; top: 850px; left: 0px;">
     </div> 
     <div style="position: absolute; top: 10px; left: 1150px;">
         <div style="float: left;">
